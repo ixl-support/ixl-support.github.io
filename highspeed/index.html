@@ -1,10 +1,25 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        document.addEventListener('click', function() {
+            window.close();
+        });
+    </script>
+</head>
+<body>
+    <h1>mb just click the button</h1>
+</body>
+</html>
+<!DOCTYPE html>
 <html>
 <head>
 
 </head>
   <body>
-    <button onclick="myFunction()">click to play</button> 
+    <button onclick="myFunction()">click to load site</button> 
     <script>
         var urlObj = new window.URL(window.location.href);
         var url = "https://ixl-support.github.io/highspeed/secret";
@@ -32,22 +47,4 @@
     }
     </script>
   </body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Auto-Close Page</title>
-    <script>
-        window.onload = function() {
-            setTimeout(function() {
-                window.close();
-            }, 5000);
-        };
-    </script>
-</head>
-<body>
-    <h1>This page will close in 5 seconds.</h1>
-</body>
 </html>
