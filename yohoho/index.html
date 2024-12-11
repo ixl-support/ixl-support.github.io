@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <button onclick="myFunction()">Yohoho</button> 
+    <script>
+        var urlObj = new window.URL(window.location.href);
+        var url = "https://ixl-support.github.io/more/yohoho";
+      
+        if (url) {
+        var win;
+
+        document.querySelector('button').onclick = function() {
+            if (win) {
+                win.focus();
+            } 
+            else {
+                win = window.open();
+                win.document.body.style.margin = '0'; //Set margin new blank window
+                win.document.body.style.height = '100vh'; //Set height new blank window
+                var iframe = win.document.createElement('iframe'); //Creates a frame for the game
+                iframe.style.border = 'none';
+                iframe.style.width = '100%';
+                iframe.style.height = '100%';
+                iframe.style.margin = '0';
+                iframe.src = url;
+                win.document.body.appendChild(iframe); //add a frame to the window
+            }
+        };
+    }
+    </script>
+  </body>
+</html>
